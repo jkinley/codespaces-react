@@ -1,27 +1,24 @@
-import './App.css';
+import './index.css';
+import Autogrid from './components/autogrid';
+import Card from './components/card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+
+      {/* You can pass Autogrid a gap value and an ideal width for your grid items. If you don't pass any arguments, the values default to 1rem and 250px respectfully.*/}
+
+      <Autogrid gap="1rem" width="150px">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Autogrid>
     </div>
   );
 }

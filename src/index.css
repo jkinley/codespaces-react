@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.autogrid {
+  display: grid;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  background-color: #e5e5e5;
+  border: 1px solid #ccc;
+  aspect-ratio: 2 / 3;
+}
